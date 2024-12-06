@@ -199,7 +199,7 @@ footer a{
 
 .velkyObdelnikHomePage{
     width:100%;
-    height: 1065px;
+    height: 150rem;
     background-color:brown;
     margin: 0 auto;
     position:relative;
@@ -210,13 +210,13 @@ footer a{
     height: 40rem;
 
 }
-.obrazek1{
+.obrazekONas{
     background-color: #000;
     height: auto;
-    width: 20%;
+    width: 30%;
     position: absolute;
-    margin-left:15% ;
-    margin-top: 10rem;
+    margin-left:10% ;
+    margin-top: 30%;
     border: #FFF5E1;
     border-radius: 80px;
     border-width: 2px;
@@ -236,7 +236,7 @@ footer a{
 .paragrafONas{
     position: relative;
     top: 10rem;
-    left: 40%;
+    left: 50%;
     width: 40%;
     height: fit-content;
     font-size: 40px;
@@ -405,9 +405,30 @@ tr:last-child td {
 
 .velkyObdelnikDotaznik{
     width: 80%;
-    height: 50rem;
+    height: fit-content;
     background-color:#a52a2a;
     margin: 0rem auto;
     position:relative;
     padding-bottom:2rem ;
+    padding-top: 2rem;
+}
+.formular{
+    color: #FFF5E1;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 10%;
+    background-color: none;
+    font-weight: bolder;
+}
+.inputy{
+    width: auto;
+    height: 2rem;
+    margin-top:0rem;
+    font-size: 20px;
+}
+.nazorInput{
+    width: 100%;
+    height: 4rem;
+    margin-top:0rem;
+    font-size: 16px;
 }
