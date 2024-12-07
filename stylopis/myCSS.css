@@ -110,14 +110,14 @@ body{
 .footerVnitrek{
     display: flex;
     width: 90%;
-    background-color: none;
+    
     height: 20rem;
     position: absolute;
     margin-left: 5%;
     
 }
 .footerKontakt{
-    background-color: none;
+    
     height: 14rem;
     width: 40%;
     padding-top:5rem ;
@@ -135,7 +135,7 @@ body{
     margin: 10%;
 }
 .footerCisla{
-    background-color: none;
+    
     height: 14rem;
     width: 23%;
     padding-top:5rem ;
@@ -143,7 +143,7 @@ body{
     margin-left: 4rem;
 }
 .footerSocials{
-    background-color: none;
+    
     height: 14rem;
     width: 20%;
     padding-top:5rem ;
@@ -155,7 +155,7 @@ body{
     justify-content: center; 
     align-items: center; 
     width: 90%;
-    background-color: none;
+    
     height: 6rem;
     position: relative;
     left: 5%;
@@ -230,7 +230,7 @@ footer a{
     width: 40%;
     height: fit-content;
     font-size: 80px;
-    background-color: none;
+    
     color: #FFF5E1;
     text-align: center;
 }
@@ -241,9 +241,7 @@ footer a{
     width: 40%;
     height: fit-content;
     font-size: 4vh;
-    background-color: none;
     color: #FFF5E1;
-    text-align: none;
     border: #000000;
     border-radius: 20px;
 }
@@ -269,7 +267,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    background-color: none;
+    
     color: white;
 }
 
@@ -327,7 +325,7 @@ tr:last-child td {
 .menuItem{
     width: 40%;
     height: 20rem;
-    background-color: none;
+    
     margin: 2rem;
     display: flex;
     justify-content: space-around;
@@ -340,7 +338,7 @@ tr:last-child td {
 .menuPic{
     height: 100%;
     width: 45%;
-    background-color: none;
+    
 }
 .menuCap{
     text-align: center;
@@ -348,7 +346,7 @@ tr:last-child td {
     color: #000000;
     width: 45%;
     height: 100%;
-    background-color: none;
+    
 
 }
 .nadpisMenu{
@@ -358,7 +356,7 @@ tr:last-child td {
     width: 40%;
     height: fit-content;
     font-size: 80px;
-    background-color: none;
+    
     color: #000;
     text-align: center;
     padding-top: 1rem;
@@ -382,7 +380,7 @@ tr:last-child td {
     width: 80%;
     height: fit-content;
     font-size: 70px;
-    background-color: none;
+    
     color: #FFF5E1;
     text-align: center;
     padding-top: 1rem;
@@ -393,7 +391,7 @@ tr:last-child td {
     text-align: center;
     font-size: 23px;
     margin: 0px 10%;
-    background-color: none;
+    
     font-weight: bolder;
 }
 .dnyVTydnu hr{
@@ -418,7 +416,7 @@ tr:last-child td {
     text-align: center;
     font-size: 40px;
     margin: 0 10%;
-    background-color: none;
+    
     font-weight: bolder;
 }
 .inputy{
