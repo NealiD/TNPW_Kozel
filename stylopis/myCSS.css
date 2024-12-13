@@ -161,7 +161,7 @@ footer{
 }
 .footerLogo{
     height: auto;
-    margin: auto 0;
+    padding-top:5rem;
 }
 .footerLogoObrazek{
     height: 10rem;
