@@ -16,17 +16,14 @@ body{
 }
 .nazevRestaurace{
     width: 100%;
-    height: fit-content;
+    height: max-content;
     background-color: #4CAF50;
     padding: 0 0;
     margin: 0;
     text-align: center;
-    font-size: 60px;
+    font-size: 7vh;
+    
 }
-
-
-/*navigation bar*/
-
 
 .navBar {
     padding: 1rem 0.1rem;
@@ -45,7 +42,7 @@ body{
     border-radius: 50px;
     padding: 1rem 2rem;
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-    height: 5rem;
+    height: 5rem;    
 }
 
 .navButton{
@@ -65,13 +62,6 @@ body{
     text-align: center;
     font-family: Arial;
     font-weight: 700;
-    
-}
-
-.navDiv a:hover{
-    background-color: white; 
-    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 1);
-    transition: background-color 0.9s ease, box-shadow 0.2s ease-in;
 }
 .navLogo {
     background-color: white;
@@ -82,98 +72,186 @@ body{
     text-align: center;
     color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: auto;
+    height: auto;   
 }
-.navLogo a:hover{
+@media screen and (max-width:426px) {
+    .navBar{ 
+        width: fit-content;
+        height: fit-content;
+        padding: 0 0;
+    }
+    .navContainer{
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        border-radius: 0px;
+        padding: 1px 0 ;
+    }
+    .navButton{
+        width: 100%;
+        margin: auto 0;
+        border-radius: 0;
+        padding: 0 0;
+        height: 4rem;
+        box-shadow: 0 0.2px 0.1px rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+
+    }
+    .specialni{
+        order: -1;
+    }
+    .navDiv{
+        width: 100%;
+    }
+}
+.navDiv a:hover{
+    background-color: white; 
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 1);
-    transition: box-shadow 0.2s ease-in;
+    transition: background-color 0.9s ease, box-shadow 0.2s ease-in;
 }
 .logoObrazek{
     height: 7rem;
     width: auto;
 }
 
-
-/*foooooooter */
-
-
+/*footer */
+footer{
+    height: fit-content;
+}
 .footerContainer{
     padding: 0;
     background-color: #FFF5E1;
     width: 100%;
-    height: 25rem;
+    height: fit-content;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 100;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
 }
 .footerVnitrek{
     display: flex;
-    width: 90%;
-    
-    height: 20rem;
-    position: absolute;
-    margin-left: 5%;
-    
+    width: 100%;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-around;
+    font-size: 3vh;
+    font-weight: lighter;
 }
-.footerKontakt{
-    
-    height: 14rem;
+
+.footerLeva {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+.footerPrava {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center
+}
+.footerKontakt{    
+    height: fit-content;
     width: 40%;
     padding-top:5rem ;
     text-align: justify;
 }
 .footerLogo{
     height: auto;
-    width: 30%;
     margin: auto 0;
 }
 .footerLogoObrazek{
     height: 10rem;
     width: auto;
-    display: flex;
-    margin: 10%;
 }
 .footerCisla{
-    
-    height: 14rem;
-    width: 23%;
+    height: fit-content;
     padding-top:5rem ;
     text-align: justify;
-    margin-left: 4rem;
 }
 .footerSocials{
-    
-    height: 14rem;
-    width: 20%;
+    margin-left: 2.5rem;
+    height: fit-content;
     padding-top:5rem ;
     text-align: justify;
-    padding-left: 3rem;
 }
 .footerCredits{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    width: 90%;
-    
-    height: 6rem;
-    position: relative;
-    left: 5%;
-    top: 19rem;
+    width: fit-content;
+    height: fit-content;
     align-items:end ;
     color: #000;
     text-align: center;
     opacity: 60%;
 }
+.footerCredits ol{
+    padding: 0 0 ;
+}
+@media screen and (max-width:426px) {
+    .footerLeva { 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 0;
+        margin-top: 0;
+        margin-block-start: 1em;
+
+    }
+    .footerLeva p{
+        margin-block-start: 0;
+    }
+
+    .footerKontakt{
+        padding-top: 0;
+        height: auto;
+        width: auto;
+        margin-block-end: 0.5em;
+
+    }
+    .footerPrava{ 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .footerCisla{
+        padding-top: 0;
+        height: auto;
+        width: auto;
+    }
+    .footerCisla p{
+        margin-block-start: 0.5em;
+
+    }
+
+    .footerSocials{
+        margin-left: 0;
+        padding: 0;
+    }
+    .footerSocials p{
+        margin-block-start: 0.5em;
+
+    }
+    .footerVnitrek{ 
+        flex-direction: column;
+    }
+}
+
 footer a{
     text-decoration: none;
-    color: #000;
+    color: #000000;
 }
 .caption {
     color: black;
-    font-weight: bolder;
     margin-bottom: 0rem;
-    font-size: 2rem;
+    font-size: 4vh;
+    font-weight: bold;
     display: block;
 }
 
@@ -201,10 +279,8 @@ footer a{
     width:100%;
     height: fit-content;
     background-color:brown;
-    margin: 0 auto;
-    position:relative;
-    top: -4rem;
-    padding-bottom: 15rem;
+    margin: 0 0;
+    padding: 0 0;
 }
 .OknoProObrazek{
     width: 100%;
@@ -214,40 +290,79 @@ footer a{
 .obrazekONas{
     background-color: #000;
     height: auto;
-    width: 30%;
+    width: 20%;
     position: absolute;
-    margin-left:10% ;
-    margin-top: 30%;
+    margin-left:15% ;
+    margin-top: 10%;
     border: #FFF5E1;
     border-radius: 80px;
     border-width: 2px;
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 .NadpisONas{
-    position: relative;
-    top: 5rem;
-    left: 30%;
-    width: 40%;
+    padding-top: 3rem;
+    width: 100%;
     height: fit-content;
-    font-size: 80px;
-    
+    font-size: 8vh;
+    margin: 0 0;
     color: #FFF5E1;
     text-align: center;
 }
 .paragrafONas{
     position: relative;
-    top: 10rem;
+    padding-top: 10rem;
     left: 50%;
     width: 40%;
     height: fit-content;
     font-size: 4vh;
     color: #FFF5E1;
     border: #000000;
-    border-radius: 20px;
+    margin-bottom: 0;
+}
+.paragrafONas2{
+    padding-top: 0%;
+    margin: 2% 10%;
+    width: 80%;
+    height: fit-content;
+    font-size: 4vh;
+    color: #FFF5E1;
+    border: #000000;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+@media screen and (max-width:426px){
+    .paragrafONas{
+        left:10%;
+        width:80%;
+        text-align: none;
+        font-size: 3vh;
+        padding-top: 1rem;
+    }
+    .NadpisONas{
+        font-size: 6vh;
+        margin-top: 0;
+    }
+    .paragrafONas2{
+        font-size: 3vh;
+    }
+    .obrazekONas{
+        position: relative;
+        width: 0%;
+        margin-top: 1rem;
+    }
+    body{
+        background-size: cover;
+    }
+    .OknoProObrazek{
+        height: 0rem;
+    }
+    .mapa{
+        height: 20rem;
+    }
+
 }
 
-
-/* Cenník */
+/* Ceník */
 
 
 .velkyObdelnikCennik{
@@ -272,9 +387,10 @@ table {
 }
 
 th {
+    height: fit-content;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 40px;
+    padding: 40px 0px;
     border-bottom: 4px solid white;
     border-left: 1px solid white;
     font-size: 5vh;
@@ -285,7 +401,7 @@ th:first-child{
 td {
     font-size: 3vh;
     width: 33%;
-    padding: 30px;
+    padding: 30px 0;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -304,7 +420,7 @@ tr:last-child td {
     border-bottom: none;
 }
 
-/* MENUUUUUUUUUUUUUUUUU */
+/* MENU */
 
 .velkyObdelnikMenu{
     width: 100%;
@@ -317,6 +433,7 @@ tr:last-child td {
 .radek{
     display: flex;
     justify-content: space-around;
+    flex-direction:row;
     align-items: center;
     width: 80%;
     height: fit-content;
@@ -325,7 +442,6 @@ tr:last-child td {
 .menuItem{
     width: 40%;
     height: 20rem;
-    
     margin: 2rem;
     display: flex;
     justify-content: space-around;
@@ -336,8 +452,8 @@ tr:last-child td {
 
 }
 .menuPic{
-    height: 100%;
-    width: 45%;
+    height: auto;
+    width: 50%;
     
 }
 .menuCap{
@@ -362,42 +478,68 @@ tr:last-child td {
     padding-top: 1rem;
     padding-bottom:1rem ;
 }
-
+@media screen and (max-width:426px) {
+    .radek{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0;   
+    }
+    .menuItem{
+        width: 80%;
+    }
+    .menuItem h3, p{
+        margin: 0px;
+    }
+    .menuItem p{
+        font-size: 5vw;
+    }
+}
 /* Oteviraci Doba */
 
 .velkyObdelnikOteviraciDoba{
     width: 60%;
-    height: 50rem;
+    height: fit-content;
     background-color:grey;
     margin: 5rem auto;
     position:relative;
     padding-bottom:2rem ;
 }
 .nadpisOteviraciDoba{
-    position: relative;
-    top: 1rem;
-    left: 10%;
-    width: 80%;
+    width: 100%;
     height: fit-content;
-    font-size: 70px;
-    
+    font-size: 8vh;
     color: #FFF5E1;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom:1rem ;
+    padding-top: 3rem ;
+    padding-bottom: 1rem;
+    margin: 0 0;
 }
 .dnyVTydnu{
     color: #FFF5E1;
     text-align: center;
     font-size: 23px;
     margin: 0px 10%;
-    
     font-weight: bolder;
 }
 .dnyVTydnu hr{
     width: 60%;
 }
-
+.dnyVTydnu .radek{
+    flex-direction: row;
+}
+@media screen and (max-width:426px) {
+    .velkyObdelnikOteviraciDoba{
+        width: 100%;
+    }
+    .velkyObdelnikOteviraciDoba h1{
+        margin: 0 0;
+        font-size: 10vw;
+        padding: 1.5rem 0;
+    }
+    .dnyVTydnu hr{
+        width: 90%;
+    }
+}
 
 /* Dotazník */
 
@@ -409,7 +551,7 @@ tr:last-child td {
     margin: 0rem auto;
     position:relative;
     padding-bottom:2rem ;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 .formular{
     color: #FFF5E1;
@@ -428,6 +570,17 @@ tr:last-child td {
 .nazorInput{
     width: 100%;
     height: 4rem;
-    margin-top:0rem;
     font-size: 16px;
+}
+
+@media screen and (max-width:500px){
+    .velkyObdelnikDotaznik{
+        width: 100%;
+    }
+    .formular{
+        margin: 0 0;
+    }
+    .inputy{
+        width: 75%;
+    }
 }
