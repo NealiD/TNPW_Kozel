@@ -466,10 +466,7 @@ tr:last-child td {
 
 }
 .nadpisMenu{
-    position: relative;
-    top: 0rem;
-    left: 30%;
-    width: 40%;
+    width: 100%;
     height: fit-content;
     font-size: 80px;
     
